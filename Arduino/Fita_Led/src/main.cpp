@@ -29,7 +29,7 @@ void loop() {
   analogWrite(BLUE_PIN, 255);
   delay(2000);
 
-  // Acende o Azul
+  // Acende o Roxo (Cor alternativa adicionada)
   analogWrite(GREEN_PIN, 0);
   analogWrite(RED_PIN, 255);
   analogWrite(BLUE_PIN, 255);
