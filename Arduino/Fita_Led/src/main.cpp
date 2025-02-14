@@ -15,7 +15,7 @@ void loop() {
   analogWrite(GREEN_PIN, 255);
   analogWrite(RED_PIN, 0);
   analogWrite(BLUE_PIN, 0);
-  delay(2000);  // Espera 1 segundo
+  delay(2000);  // Espera 2 segundo
 
   // Acende o Vermelho
   analogWrite(GREEN_PIN, 0);
