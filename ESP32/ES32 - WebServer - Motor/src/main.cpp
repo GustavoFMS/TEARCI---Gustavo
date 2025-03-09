@@ -15,8 +15,8 @@ const int stepsPerRevolution = 2048;
 Stepper myStepper(stepsPerRevolution, IN4, IN3, IN2, IN1);
 
 // Credenciais de rede Wi-Fi
-const char* ssid = "iPhone de Paloma";
-const char* password = "palloma321";
+const char* ssid = "Lavoisier";
+const char* password = "Lavoisier1";
 
 // Definir o número da porta do servidor
 WiFiServer server(80);
