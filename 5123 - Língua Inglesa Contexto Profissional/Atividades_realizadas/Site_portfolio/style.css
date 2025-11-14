@@ -1,0 +1,364 @@
+html {
+    cursor: url(http://www.rw-designer.com/cursor-view/18611.png), auto;
+}
+
+a {
+    cursor: url(http://www.rw-designer.com/cursor-view/13118.png), auto;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Jost", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content max-content;
+    background-color: #000d3f;
+    color: white;
+}
+
+header {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 1.4em;
+}
+
+/* Nav-bar*/
+.nav-bar {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    gap: 30px;
+}
+
+/* Nav-bar items*/
+
+.nav-bar-items{
+    margin: 10px;
+    padding: 4px 15px;
+}
+
+.nav-bar-items{
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.nav-bar-items:hover{
+    transition-delay: 0.15s;
+    background-color: #120625;
+    border-radius: 30px;
+    border: 0.1px solid;
+    border-color: white;
+}
+/*****************/
+
+main {
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
+}
+
+/* Section Home */
+#home {
+    display: grid;
+    height: 88vh;
+    grid-template-columns: 450px 1fr 450px;
+    grid-template-areas: 'welcome image-robot about-the-etraic';
+    gap: 20px;
+}
+
+
+/*Div (welcome)*/
+.welcome {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    grid-area: welcome;
+}
+
+.welcome {
+    padding-left: 5em;
+    padding-top: 8em;
+}
+
+.welcome h1 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.welcome #p1home {
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.welcome #p2home {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    flex-direction: row;
+}
+
+.skills {
+    padding-top: 15px;
+}
+
+.skills li{
+    text-align: justify;
+    font-size: 14px;
+    list-style-type: none;
+    font-weight: 600;
+    padding: 1px 15px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.skill1{
+    background-color: aqua;
+    color: black;
+}
+
+.skill2{
+    background-color: #5C1EFE;
+    color: black;
+}
+
+.skill3{
+    background-color: #FFD700;
+    color: black;
+}
+
+.skill4 {
+    background-color: #FF6347;
+    color: black;
+}
+
+.skill5 {
+    background-color: #FF69B4;
+    color: black;
+}
+
+.skill6 {
+    background-color: #00FF00;
+    color: black;
+}
+
+.skill7 {
+    background-color: #FF4500;
+    color: black;
+}
+
+.image-robot{
+    display: flex;
+    flex-wrap: nowrap;
+    grid-area: image-robot;
+}
+
+.image-robot img {
+    max-width: 100%;
+    max-height: 100%;
+    background-image: radial-gradient(#5C1EFE 42%, #000d3f, #000d3f);
+}
+
+/*Div(about-the-etraic)*/
+.about-the-etraic{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 20em 2em 0 1em;
+    grid-area: about-the-etraic;
+    gap: 10px;
+}
+
+.about-the-etraic h1 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.about-the-etraic p {
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*****************/
+
+/*Section Projects*/
+#projects {
+    background-color: #230059;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.title-portfolio-project {
+    display: flex;
+    gap: 13px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title-portfolio-project {
+    padding: 3em 0 0 4em;
+}
+
+hr {
+    width: 30px;
+}
+
+.about-projects {
+    padding: 0 66em 0 6em;
+}
+
+.about-projects p {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.projects-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.projects-cards {
+    padding: 5em 0em 13em 0;
+    gap: 5em;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card {
+    width: 17em;
+    background-color: #0f0026;
+    border-radius: 15px
+}
+
+.project-card:hover {
+    transition-delay: 0.20s;
+    box-shadow: 12px 10px 30px #37008c;
+}
+
+.project-card a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.project-card h1 {
+    border-bottom: 1px solid white ;
+}
+
+.project-card img {
+    width: 18em;
+    height: 16em;
+    object-fit: contain;
+    padding: 2em 1em 4px 1em;
+}
+
+.project-card p {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    text-align: justify;
+    font-size: 14px
+}
+
+
+/*Section Contact*/
+.title-contacts {
+    display: flex;
+    gap: 13px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title-contacts {
+    padding: 3em 0 2em 4em;
+}
+
+hr {
+    width: 30px;
+}
+
+.info-contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.email {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.phone {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#contacts p {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*Footer*/
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+footer hr {
+    width: 100%;
+}
+footer {
+    padding-top: 2em;
+    
+}
+footer p {
+    font-size: 10px;
+    font-weight: 400;
+    padding-top: 2px ;
+    text-align: center;
+}
+
